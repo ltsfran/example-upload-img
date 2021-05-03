@@ -5,5 +5,32 @@
   <title>Example Upload IMG</title>
 </head>
 <body>
+  <main class="wrapper">
+    <div class="c-drop-zone">
+      <div class="img-counter__wrapper">
+        <div class="img-counter__text">
+          <span>Fotos subidas: </span>
+          <span class="img-counter__number"></span>
+        </div>
+      </div>
+      <div class="upload-photos">
+        <ul class="upload-photos__list upload-photos__list--empty">
+          <li class="upload-photos__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud">
+              <polyline points="16 16 12 12 8 16"/>
+              <line x1="12" y1="12" x2="12" y2="21"/>
+              <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/>
+              <polyline points="16 16 12 12 8 16"/>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="c-drop-zone__options">
+        <p class="c-drop-zone__options-text">Arrastra aquí tus imágenes, o si prefieres:</p>
+        <input class="c-drop-zone___options-input" type="file" />
+        <span class="c-drop-zone__options-button">AÑADIR FOTOS</span>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
