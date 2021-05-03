@@ -2,3 +2,126 @@
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+
+.c-drop-zone {
+  width: 100%;
+  border: 1px dashed #999999;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+}
+
+.img-counter__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.img-counter__text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-counter__number {
+  min-width: 46px;
+  text-align: center;
+}
+
+.upload-photos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.upload-photos__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 26px;
+  width: 100%;
+  list-style-type: none;
+}
+
+.upload-photos__list--empty {
+  grid-template-columns: auto;
+}
+
+.upload-photos__list--empty .upload-photos__item {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.upload-photos__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: #F5F5F5;
+  border: 1px solid #D9D9D9;
+}
+
+.upload-photos__item svg {
+  width: 60px;
+  height: 60px;
+  color: #C6C6C6;
+}
+
+.c-drop-zone__options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.c-drop-zone__options-text {
+  width: 100%;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.c-drop-zone___options-input {
+  display: none;
+}
+
+.c-drop-zone__options-button {
+  width: 100%;
+  max-width: 270px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.c-drop-zone__options-button--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media(min-width: 768px) {
+  .wrapper {
+    padding: 10px 24px;
+  }
+}
