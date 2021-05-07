@@ -28,6 +28,10 @@ body {
   font-size: 0.875rem;
 }
 
+.c-drop-zone--over {
+  border: 1px solid #999999;
+}
+
 .img-counter__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -54,14 +58,15 @@ body {
 
 .upload-photos__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-column-gap: 26px;
+  grid-row-gap: 26px;
   width: 100%;
   list-style-type: none;
 }
 
 .upload-photos__list--empty {
-  grid-template-columns: auto;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .upload-photos__list--empty .upload-photos__item {
