@@ -82,6 +82,9 @@ body {
   min-height: 100px;
   background-color: #F5F5F5;
   border: 1px solid #D9D9D9;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .upload-photos__item svg {
